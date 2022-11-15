@@ -1,0 +1,40 @@
+#interfaz{
+    padding: 10px 10px;
+    text-shadow: 2px 2px 4px #474545;
+    color: black;
+}
+#interfaz2{
+    padding: 10px 10px 10px;
+    background-color: rgb(252, 249, 249);
+    margin: 0 auto;
+    max-height: max-content;
+    max-width: fit-content;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#titulo{
+    text-align: center;
+    font-style: bold;
+    word-spacing: -0.3em;
+}
+.secondPartPT{
+    font-weight: normal;
+}
+.secondTit{
+    text-align: center;
+    padding: 30px 10px;
+    font-style: bold;
+    font-size: medium;
+}
+.loginName{
+    display: block;
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 5px;
+}
+.inputW{
+    margin: 10px;
+    color:rgb(192, 192, 192);
+    border-radius: 5px;
+    border: 1px solid rgb(38, 128, 30);
+}
