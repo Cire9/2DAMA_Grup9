@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.Projecta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CDCBCB"
+    android:backgroundTint="#FFFFFF"
+    app:layout_dodgeInsetEdges="top"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/Titol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:layoutDirection="inherit"
+        android:text="Reciclapp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textbuzon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="6dp"
+        android:background="#B1AEAE"
+        android:text="Buzon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textperfil"
+        app:layout_constraintStart_toEndOf="@+id/textfavorito" />
+
+    <TextView
+        android:id="@+id/textInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="#B1AEAE"
+        android:text="Inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textfavorito"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textfavorito"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#B1AEAE"
+        android:text="Favoritos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textbuzon"
+        app:layout_constraintStart_toEndOf="@+id/textInicio" />
+
+    <TextView
+        android:id="@+id/textperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#B1AEAE"
+        android:text="Perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textbuzon" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="313dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tapas_botella_arte_slider" />
+
+    <ImageButton
+        android:id="@+id/FavoritosImg"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textfavorito"
+        app:layout_constraintEnd_toStartOf="@+id/BuzonImg"
+        app:layout_constraintStart_toEndOf="@+id/InicioImg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageButton
+        android:id="@+id/BuzonImg"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textbuzon"
+        app:layout_constraintEnd_toStartOf="@+id/PerfilImg"
+        app:layout_constraintStart_toEndOf="@+id/FavoritosImg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/PerfilImg"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textperfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BuzonImg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+    <ImageButton
+        android:id="@+id/InicioImg"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInicio"
+        app:layout_constraintEnd_toStartOf="@+id/FavoritosImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/CompraImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Titol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategorias"
+        android:layout_width="269dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="4dp"
+        android:background="#03A9F4"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

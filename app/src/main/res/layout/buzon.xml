@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:visibility="visible"
+    tools:context=".Buzon">
+
+    <TextView
+        android:id="@+id/textbuzon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="6dp"
+        android:text="Buzon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textperfil"
+        app:layout_constraintStart_toEndOf="@+id/textfavorito" />
+
+    <TextView
+        android:id="@+id/textInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textfavorito"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textfavorito"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Favoritos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textbuzon"
+        app:layout_constraintStart_toEndOf="@+id/textInicio" />
+
+    <TextView
+        android:id="@+id/textperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textbuzon" />
+
+
+    <ImageButton
+        android:id="@+id/FavoritosImg3"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textfavorito"
+        app:layout_constraintEnd_toStartOf="@+id/BuzonImg3"
+        app:layout_constraintStart_toEndOf="@+id/InicioImg3"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageButton
+        android:id="@+id/BuzonImg3"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textbuzon"
+        app:layout_constraintEnd_toStartOf="@+id/PerfilImg3"
+        app:layout_constraintStart_toEndOf="@+id/FavoritosImg3"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/PerfilImg3"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textperfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BuzonImg3"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+
+    <ImageButton
+        android:id="@+id/InicioImg3"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInicio"
+        app:layout_constraintEnd_toStartOf="@+id/FavoritosImg3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <EditText
+        android:id="@+id/buscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/style_borde"
+        android:ems="10"
+        android:hint="buscador"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
