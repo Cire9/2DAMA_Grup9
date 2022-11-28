@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="style.css">
-  <title>Client Login V2</title>
+  <title>Login • RecyclApp</title>
 </head>
 <body>
     <div id="interfaz">
@@ -26,8 +26,8 @@
                        <v-form v-model="valid" ref="form">
                          <v-text-field
                            label="Enter your e-mail address"
-                           v-model="date.email"
-                           :rules="emailRules"
+                           v-model="date.nickname"
+                           :rules="nicknameRules"
                            required
                          ></v-text-field>
                          <v-text-field
@@ -42,7 +42,6 @@
                          ></v-text-field>
                          <v-layout justify-space-between>
                              <v-btn @click="submit" :class=" { 'blue darken-4 white--text' : valid, disabled: !valid }">Login</v-btn>
-                             <a href="">Forgot Password</a>
                          </v-layout>
                        </v-form>
                    </div>
@@ -56,6 +55,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="login.js"></script>
 </body>
 </html>

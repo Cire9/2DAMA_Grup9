@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="style.css">
-  <title>Client Login V2</title>
+  <title>Register • RecyclApp</title>
 </head>
 <body>
     <div id="interfaz">
@@ -24,25 +24,58 @@
                  <v-card-text class="pt-4">
                    <div>
                        <v-form v-model="valid" ref="form">
+                        <v-row>
+                          <v-col
+                            cols="12"
+                            sm="6"
+                          >
+                          <v-text-field
+                           label="First name"
+                           v-model="date.firstName"
+                           :rules="fistNameRules"
+                           required
+                         ></v-text-field>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                        >
+                          <v-text-field
+                          label="Last name"
+                          v-model="date.lastName"
+                          :rules="lastNameRules"
+                          required
+                        ></v-text-field>
+                      </v-col>
+                        </v-row>
+                         
+
                          <v-text-field
-                           label="Enter your e-mail address"
-                           v-model="email"
+                           label="Enter your email"
+                           v-model="date.email"
                            :rules="emailRules"
+                           required
+                         ></v-text-field>
+
+                         <v-text-field
+                           label="Enter your nickname"
+                           v-model="date.nickname"
+                           :rules="nicknameRules"
                            required
                          ></v-text-field>
                          <v-text-field
                            label="Enter your password"
-                           v-model="password"
+                           v-model="date.password"
                            min="8"
                            
-                           :type="e1 ? 'password' : 'text'"
+                           type= "password"
                            :rules="passwordRules"
                            counter
                            required
                          ></v-text-field>
+
                          <v-layout justify-space-between>
-                             <v-btn @click="submit" :class=" { 'blue darken-4 white--text' : valid, disabled: !valid }">Login</v-btn>
-                             <a href="">Forgot Password</a>
+                             <v-btn @click="submit" :class=" { 'blue darken-4 white--text' : valid, disabled: !valid }">Register</v-btn>
                          </v-layout>
                        </v-form>
                    </div>
@@ -56,6 +89,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="register.js"></script>
 </body>
 </html>
