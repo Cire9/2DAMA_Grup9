@@ -46,7 +46,10 @@ new Vue({
                         console.log("ERROR!!");
                         console.log(error);
                     }
-                )}/*
+                    
+                )
+                window.location="http://localhost/Project/main.php";
+            }/*
                 if (this.$refs.form.validate()) {
                     this.$refs.form.$el.submit()
                 }
@@ -54,5 +57,6 @@ new Vue({
                 clear () {
                 this.$refs.form.reset()
                 }*/
+                
             },
   })
